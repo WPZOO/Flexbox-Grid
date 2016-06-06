@@ -27,11 +27,13 @@ The different screen sizes are controlled by this class names:
 You need to exchange the question marks with a number from 1 to 12. The number stand for the amount of grid columns that are filled.
 
 You might want to align the columns inside the row. All you need to do is add another class attribute to the `[flex_row]` shortcode. Here is an example:
+
 ```
 [flex_row class="center-xs start-md"]
 [flex_col class="col-xs-10 col-md-3"]First column[/flex_col]
 [flex_col class="col-xs-10 col-md-7"]Second column[/flex_col]
 [/flex_row]
+```
 
 Same here, you are able to control the alignment on each of the mentioned screen sizes (xs, sm, md and lg) differently.
 
@@ -42,7 +44,6 @@ The following alignment classes are possible:
 * `top-??` vertical
 * `middle-??` vertical
 * `bottom-??` vertical
-```
 
 Learn more about even more possible classes you can use with [flexboxgrid.com](http://flexboxgrid.com). Except the nested grids, all classes will work within the shortcodes.
 
