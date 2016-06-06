@@ -42,8 +42,9 @@ The following alignment classes are possible:
 * `top-??` vertical
 * `middle-??` vertical
 * `bottom-??` vertical
+```
 
-Learn more about even more possible classes you can use with <a href="http://flexboxgrid.com">flexboxgrid.com</a>.
+Learn more about even more possible classes you can use with [flexboxgrid.com](http://flexboxgrid.com). Except the nested grids, all classes will work within the shortcodes.
 
 ## Support
 Please use the support forum on [wordpress.org](https://wordpress.org/plugins/flexbox-grid).

@@ -16,7 +16,7 @@ Author URI: https://wpzoo.ch/en/
 function cobra_row( $atts, $content = null ) {
 
 	$atts = shortcode_atts( array( 'class' => '' ), $atts, 'flex_row' );
-	return '<div class="row ' . $atts['class'] . '">' . do_shortcode( $content ) . '</div>';
+	return '<div class="row ' . esc_attr( $atts['class'] ) . '">' . do_shortcode( $content ) . '</div>';
 }
 add_shortcode('flex_row', 'cobra_row');
 
@@ -24,12 +24,12 @@ add_shortcode('flex_row', 'cobra_row');
 function cobra_col( $atts, $content = null ) {
 
 	$atts = shortcode_atts( array( 'class' => 'col-xs' ), $atts, 'flex_col' );
-	return '<div class="' . $atts['class'] . '">' . do_shortcode( $content ) . '</div>';
+	return '<div class="' . esc_attr( $atts['class'] ) . '">' . do_shortcode( $content ) . '</div>';
 }
 add_shortcode('flex_col', 'cobra_col');
 
 // Load stylesheet
 function cobra_styles() {
-	wp_enqueue_style( 'cobra_stylesheet', plugins_url('css/flexboxgrid.min.css', __FILE__) );
+	wp_enqueue_style( 'cobra_stylesheet', plugins_url('css/flexboxgrid.min.css', __FILE__), array(), '6.3.0' );
 }
 add_action( 'wp_enqueue_scripts', 'cobra_styles' );
