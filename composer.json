@@ -1,0 +1,29 @@
+{
+	"name"        : "wpzoo/flexbox-grid",
+	"description" : "Just a simple WordPress shortcode plugin which uses the styles of http://flexboxgrid.com.",
+	"keywords"    : ["wordpress", "plugin", "flexbox-grid"],
+	"type"        : "wordpress-plugin",
+	"homepage"    : "https://github.com/WPZOO/Flexbox-Grid",
+	"license"     : "GPL2",
+	"authors"     : [
+		{
+			"name"    : "WPZOO",
+			"email"   : "support@wpzoo.ch",
+			"homepage": "http://ulrich.pogson.ch/"
+		},
+		{
+			"name"    : "Stefan Brechbühl",
+			"homepage": "http://pixelstrol.ch/"
+		},
+		{
+			"name"    : "Ulrich Pogson",
+			"homepage": "http://ulrich.pogson.ch/"
+		}
+	],
+	"support"     : {
+		"issues": "https://github.com/WPZOO/Flexbox-Grid/issues"
+	},
+	"require" : {
+		"php": ">=5.2"
+	}
+}
